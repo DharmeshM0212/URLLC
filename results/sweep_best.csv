@@ -1,0 +1,2 @@
+config,mode,paths,n,k,messages,deadline_ms,deadline_success,p50_ms,p95_ms,p99_ms,overhead,late_rate,excess_lateness_mean_ms
+tdma_p1_n5k3,tdma,1,5,3,1200,20.0,1.0,5.293321429762727,6.351465445112262,6.890879846826301,1.6666666666666958,0.0,0.0

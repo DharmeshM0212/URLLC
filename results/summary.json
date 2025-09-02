@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "config": "IID_baseline_best_effort_n1k1",
+    "messages": 1200,
+    "deadline_ms": 20.0,
+    "deadline_success": 0.9816666666666667,
+    "p50_ms": 6.331746467109042,
+    "p95_ms": 14.044318510322345,
+    "p99_ms": 18.236832123380918,
+    "overhead": 1.0,
+    "late_rate": 0.018333333333333313,
+    "excess_lateness_mean_ms": 0.17229788546281896
+  },
+  "best_config": {
+    "config": "tdma_p1_n5k3",
+    "mode": "tdma",
+    "paths": 1,
+    "n": 5,
+    "k": 3,
+    "messages": 1200,
+    "deadline_ms": 20.0,
+    "deadline_success": 1.0,
+    "p50_ms": 5.293321429762727,
+    "p95_ms": 6.351465445112262,
+    "p99_ms": 6.890879846826301,
+    "overhead": 1.6666666666666958,
+    "late_rate": 0.0,
+    "excess_lateness_mean_ms": 0.0
+  },
+  "end_to_end": [
+    {
+      "config": "BASE (best_effort,1path,n1k1)",
+      "overhead": 1.0,
+      "det_success": 0.973,
+      "det_p95_ms": 25.812478366302138,
+      "det_p99_ms": 395.01929354235705,
+      "net_success": 0.9650565262076053,
+      "net_p95_ms": 13.429875732365948,
+      "net_p99_ms": 17.92302035513597,
+      "total_success": 0.9
+    },
+    {
+      "config": "ROBUST (tdma,2paths,n4k2)",
+      "overhead": 2.0,
+      "det_success": 0.973,
+      "det_p95_ms": 25.812478366302138,
+      "det_p99_ms": 395.01929354235705,
+      "net_success": 1.0,
+      "net_p95_ms": 5.372399397601594,
+      "net_p99_ms": 5.922134992285757,
+      "total_success": 0.931
+    }
+  ]
+}
